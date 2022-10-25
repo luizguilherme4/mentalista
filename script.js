@@ -1,4 +1,4 @@
-var delayInMilliseconds = 6000;
+var delayInMilliseconds = 4000;
 var numeroSecreto = parseInt(Math.random() * 11)
 
 setTimeout(function delay() {
