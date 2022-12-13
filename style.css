@@ -20,6 +20,10 @@ main {
     background-color: #F1F1F1;
 }
 
+#green-bg {
+    background-color: #34A852;
+}
+
 section {
     width: 100vw;
     height: 100vh;
@@ -36,6 +40,10 @@ h1 {
     color: #777777;
 }
 
+.white-text {
+    color: #F1F1F1;
+}
+
 .circles {
     display: flex;
     gap: 48px;
@@ -49,18 +57,78 @@ h1 {
 
 #circle-green {
     background-color: #34A852;
+    animation: circle-green-animation 3s ease;
+}
+
+@keyframes circle-green-animation {
+    0% {
+        background-color: #34A852;
+    }
+
+    50% {
+        background-color: #F1F1F1;
+    }
+
+    100% {
+        background-color: #34A852;
+    }
 }
 
 #circle-blue {
     background-color: #4285F4;
+    animation: circle-blue-animation 5s ease;
+}
+
+@keyframes circle-blue-animation {
+    0% {
+        background-color: #4285F4;
+    }
+
+    50% {
+        background-color: #F1F1F1;
+    }
+
+    100% {
+        background-color: #4285F4;
+    }
 }
 
 #circle-yellow {
     background-color: #FABB05;
+    animation: circle-yellow-animation 7s ease;
+}
+
+@keyframes circle-yellow-animation {
+    0% {
+        background-color: #FABB05;
+    }
+
+    50% {
+        background-color: #F1F1F1;
+    }
+
+    100% {
+        background-color: #FABB05;
+    }
 }
 
 #circle-red {
     background-color: #EA4335;
+    animation: circle-red-animation 9s ease;
+}
+
+@keyframes circle-red-animation {
+    0% {
+        background-color: #EA4335;
+    }
+
+    50% {
+        background-color: #F1F1F1;
+    }
+
+    100% {
+        background-color: #EA4335;
+    }
 }
 
 footer {
@@ -74,4 +142,58 @@ p {
     font-size: 20px;
     font-weight: 700;
     color: #989898;
+}
+
+input {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+
+    background-color: #34A852;
+    border: none;
+    outline: none;
+
+    font-size: 80px;
+    font-weight: 700;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #34A852;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    filter: opacity(0.8);
+    cursor: pointer;
+}
+
+button p {
+    font-size: 24px;
+    color: #F1F1F1;
+}
+
+.attempts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
