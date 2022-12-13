@@ -1,4 +1,4 @@
-var delayInMilliseconds = 4000;
+var delayInMilliseconds = 1000;
 var randomNumb = parseInt(Math.random() * 11);
 var main = document.querySelector("main");
 
@@ -7,7 +7,13 @@ setTimeout(function delay() {
     <section>
         <h1>Digite um número entre 0 e 10</h1>
 
-        <input type="number">
+        <div class="inputs">
+            <input class="wrong-attempts" id="circle-3" type="number"disabled="">
+            <input class="wrong-attempts" id="circle-2"type="number" disabled="">
+            <input class="wrong-attempts" id="circle-1"type="number" disabled="">
+            <input class="userAttempt" type="number">
+        </div>
+        
         <button onClick="check()">
             <p>enviar</p>
             <img src="/images/arrow-icon.svg" alt="ícone seta">
@@ -28,7 +34,7 @@ setTimeout(function delay() {
 }, delayInMilliseconds)
 
 function check() {
-    const userAttempt = document.querySelector("input").value;
+    const userAttempt = document.querySelector(".userAttempt").value;
 
     if (userAttempt == randomNumb) {
         console.log(`ACERTOU userNumb: ${userAttempt} randomNumb: ${randomNumb}`)
@@ -47,5 +53,9 @@ function check() {
         </footer>`
     } else {
         console.log(`ERROU userNumb: ${userAttempt} randomNumb: ${randomNumb}`)
+
+        var circle1 = document.querySelector("#circle-1");
+        circle1.style.backgroundColor = "red";
+        
     }
 }

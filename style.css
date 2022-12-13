@@ -144,10 +144,20 @@ p {
     color: #989898;
 }
 
+.inputs {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
 input {
     width: 240px;
     height: 240px;
     border-radius: 100%;
+    margin-right: 460px;
 
     background-color: #34A852;
     border: none;
@@ -164,6 +174,18 @@ input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+.wrong-attempts {
+    width: 140px;
+    height: 140px;
+    margin-right: 0;
+}
+
+#circle-1,
+#circle-2,
+#circle-3 {
+    background-color: #F1F1F1;
 }
 
 button {
