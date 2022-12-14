@@ -24,6 +24,10 @@ main {
     background-color: #34A852;
 }
 
+#red-bg {
+    background-color: #EA4335;
+}
+
 section {
     width: 100vw;
     height: 100vh;
@@ -211,6 +215,12 @@ button:hover {
 button p {
     font-size: 24px;
     color: #F1F1F1;
+}
+
+#back-button {
+    background-color: transparent;
+    color: #F1F1F1;
+    border: 2px solid #F1F1F1;
 }
 
 .attempts {

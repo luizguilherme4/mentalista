@@ -47,8 +47,11 @@ function check() {
         main.innerHTML = `
         <section>
             <h1 class="white-text">Você acertou!</h1>
-            <h1 class="white-text">${userAttempt}</h1>
+            <h1 class="white-text">${randomNumb}</h1>
             <h2 class="white-text">foi o número sorteado</h1>
+            <button id="back-button" onClick="window.location.reload()">
+                <p>voltar</p>
+            </button>
         </section>
         <footer>
             <p class="white-text">feito com</p>
@@ -66,9 +69,13 @@ function check() {
             case 2:
                 check2();
                 break;
-            
+
             case 3:
                 check3();
+                break;
+
+            case 4:
+                loss();
                 break;
         }
     }
@@ -132,4 +139,22 @@ function check3() {
         <img src="/images/wrong-icon.svg" alt="tentativa errada">
         <img src="/images/open-icon.svg" alt="tentativa aberta">
         `
+}
+
+function loss() {
+    main.id = "red-bg";
+    main.innerHTML = `
+        <section>
+            <h1 class="white-text">Você errou!</h1>
+            <h1 class="white-text">${randomNumb}</h1>
+            <h2 class="white-text">foi o número sorteado</h1>
+            <button id="back-button" onClick="window.location.reload()">
+                <p>voltar</p>
+            </button>
+        </section>
+        <footer>
+            <p class="white-text">feito com</p>
+            <img src="images/white-heart-icon.svg" alt="ícone de coração">
+            <p class="white-text">por Luiz</p>
+        </footer>`
 }
