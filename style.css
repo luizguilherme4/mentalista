@@ -3,376 +3,270 @@
 * {
     margin: 0;
     padding: 0;
+
     font-family: 'Nunito';
     font-style: normal;
 }
 
-#main {
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #F1F1F1;
+}
+
+#green-bg {
+    background-color: #34A852;
+}
+
+#red-bg {
+    background-color: #EA4335;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 95vh;
+    align-items: center;
+    gap: 32px;
 }
 
-.color-white {
-    background-color: #F1F1F1
-}
-
-.container-top {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: #F1F1F1;
-    height: 50%;
-}
-
-.text {
+h1 {
+    font-size: 40px;
     color: #777777;
-    font-family: 'Nunito';
-    font-size: 2.25rem;
-    margin-bottom: 0.75rem;
 }
 
-.container-down {
+.white-text {
+    color: #F1F1F1;
+}
+
+#answer {
+    font-size: 64px;
+}
+
+.circles {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #F1F1F1;
-    height: 50%;
+    gap: 48px;
 }
 
 .small-circle {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100rem;
-    margin-right: 1.75rem;
-    margin-top: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
 }
 
-#circle-1 {
-    background: #34A852;
-    animation: circle-1-animation 3s ease;
-    animation-iteration-count: 2;
+#circle-green {
+    background-color: #34A852;
+    animation: circle-green-animation 3s ease;
 }
 
-@keyframes circle-1-animation {
+@keyframes circle-green-animation {
     0% {
-        background: #F1F1F1;
+        background-color: #34A852;
     }
 
     50% {
-        background: #34A852;
+        background-color: #F1F1F1;
     }
 
     100% {
-        background: #F1F1F1;
+        background-color: #34A852;
     }
 }
 
-#circle-2 {
-    background: #4285F4;
-    animation: circle-2-animation 3.3s ease;
-    animation-iteration-count: 2;
+#circle-blue {
+    background-color: #4285F4;
+    animation: circle-blue-animation 5s ease;
 }
 
-@keyframes circle-2-animation {
+@keyframes circle-blue-animation {
     0% {
-        background: #F1F1F1;
+        background-color: #4285F4;
     }
 
     50% {
-        background: #4285F4;
+        background-color: #F1F1F1;
     }
 
     100% {
-        background: #F1F1F1;
+        background-color: #4285F4;
     }
 }
 
-#circle-3 {
-    background: #FABB05;
-    animation: circle-3-animation 3.6s ease;
-    animation-iteration-count: 2;
+#circle-yellow {
+    background-color: #FABB05;
+    animation: circle-yellow-animation 7s ease;
 }
 
-@keyframes circle-3-animation {
+@keyframes circle-yellow-animation {
     0% {
-        background: #F1F1F1;
+        background-color: #FABB05;
     }
 
     50% {
-        background: #FABB05;
+        background-color: #F1F1F1;
     }
 
     100% {
-        background: #F1F1F1;
+        background-color: #FABB05;
     }
 }
 
-#circle-4 {
-    background: #EA4335;
-    animation: circle-4-animation 3.9s ease;
-    animation-iteration-count: 2;
+#circle-red {
+    background-color: #EA4335;
+    animation: circle-red-animation 9s ease;
 }
 
-@keyframes circle-4-animation {
+@keyframes circle-red-animation {
     0% {
-        background: #F1F1F1;
+        background-color: #EA4335;
     }
 
     50% {
-        background: #EA4335;
+        background-color: #F1F1F1;
     }
 
     100% {
-        background: #F1F1F1;
+        background-color: #EA4335;
     }
 }
 
+footer {
+    margin-bottom: 40px;
 
-.container-footer {
-    background-color: #F1F1F1;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 5vh;
+    gap: 4px;
 }
 
-.footer-text {
-    font-size: 1rem;
+p {
+    font-size: 20px;
     font-weight: 700;
     color: #989898;
 }
 
-#icon-coracao {
-    width: 1rem;
-    margin: 0.5rem;
-}
+.inputs {
+    width: 100vw;
 
-.container-top-2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: #F1F1F1;
-    height: 25%;
-}
-
-#container-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F1F1F1;
-    height: 45%;
-    margin-right: 9rem;
+    gap: 16px;
 }
 
-.big-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 100rem;
-    margin-left: 5rem;
-}
+input {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    margin-right: 460px;
 
-#bcircle-0 {
-    background: #F1F1F1;
-}
-
-#bcircle-1 {
-    background: #34A852;
-}
-
-#bcircle-2 {
-    background: #4285F4;
-}
-
-#bcircle-3 {
-    background: #FABB05;
-}
-
-#bcircle-4 {
-    background: #EA4335;
-}
-
-.numbers {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 6rem;
-    text-align: center;
-    width: 7rem;
+    background-color: #34A852;
     border: none;
     outline: none;
+
+    font-size: 80px;
+    font-weight: 700;
     color: #F1F1F1;
+    text-align: center;
 }
 
-#numb-1 {
-    background-color: #34A852;
-}
-
-#numb-2 {
-    background-color: #4285F4;
-}
-
-#numb-3 {
-    background: #FABB05;
-}
-
-#numb-4 {
-    background: #EA4335;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.buttom {
+.wrong-attempts {
+    width: 140px;
+    height: 140px;
+    margin-right: 0;
+}
+
+#circle-1,
+#circle-2,
+#circle-3 {
+    background-color: #F1F1F1;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0.5rem;
-    width: 7rem;
-    height: 3rem;
+    gap: 8px;
+
+    background-color: #34A852;
     border: none;
-    border-radius: 1.5rem;
+    outline: none;
+}
+
+button:hover {
+    filter: opacity(0.8);
     cursor: pointer;
 }
 
-.buttom:hover {
-    filter: opacity(0.8);
-}
-
-#buttom-green {
-    background: #34A852;
-}
-
-#buttom-blue {
-    background: #4285F4;
-}
-
-#buttom-orange {
-    background: #FABB05;
-}
-
-#buttom-red {
-    background: #EA4335;
-}
-
-.buttom-text {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
+button p {
+    font-size: 24px;
     color: #F1F1F1;
 }
 
-.icon-arrow {
-    width: 1.25rem;
-    margin-left: 0.5rem;
-}
-
-#container-down-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F1F1F1;
-    height: 30%;
+#back-button {
+    background-color: transparent;
+    color: #F1F1F1;
+    border: 2px solid #F1F1F1;
 }
 
 .attempts {
-    width: 1.5rem;
-    margin-bottom: 8rem;
-    margin-right: 2rem;
-}
-
-.container-top-3 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 35%;
-}
-
-.yes {
-    background-color: #34A852;
-}
-
-.no {
-    background-color: #EA4335;
-}
-
-.text-final {
-    color: #F1F1F1;
-    font-family: 'Nunito';
-    font-size: 6rem;
-    font-weight: 700;
-}
-
-#container-center-3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35%;
+    gap: 16px;
 }
 
-.text-final-2 {
-    color: #F1F1F1;
-    font-family: 'Nunito';
-    font-size: 3rem;
-    font-weight: 700;
-}
+@media (max-width: 1023px) {
 
-.container-down-3 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 30%;
-}
-
-.white {
-    color: #F1F1F1;
-}
-
-.left-circle-0 {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 100rem;
-    margin-left: 5rem;
-    margin-right: -2rem;
-}
-
-@media (max-width: 1024px) {
-    #body {
-        justify-content: center;
-        flex-direction: column;
+    h1,
+    h2 {
+        font-size: 20px;
     }
 
-    .text,
-    .text-final,
-    .text-final-2 {
-        font-size: 1.0rem;
+    .circles {
+        gap: 20px;
     }
 
-    .big-circle {
-        width: 8rem;
-        height: 8rem;
-        border-radius: 100%;
-        margin-right: 0rem;
+    .small-circle {
+        width: 20px;
+        height: 20px;
     }
 
-    .numbers {
-        font-size: 4rem;
-        width: 8rem;
-        border-radius: 100%;
+    img {
+        width: 16px;
+        height: 16px;
     }
 
-    .buttom {
-        width: 7rem;
-        height: 2rem;
-        margin-right: 1rem;
+    p,
+    button p {
+        font-size: 16px;
+    }
+
+    input {
+        width: 200px;
+        height: 200px;
+    }
+
+    button {
+        width: 120px;
     }
 }
