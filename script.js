@@ -1,19 +1,18 @@
-var delayInMilliseconds = 500;
+var delayInMilliseconds = 2000;
 var randomNumb = parseInt(Math.random() * 11);
 var main = document.querySelector("main");
 var index = 0;
 
 setTimeout(function delay() {
-    console.log(randomNumb);
     main.innerHTML = `
     <section>
-        <h1>Digite um número entre 0 e 10</h1>
+        <h1 class="title">Digite um número entre 0 e 10</h1>
 
         <div class="inputs">
             <input class="wrong-attempts" id="circle-3" type="number"disabled="">
             <input class="wrong-attempts" id="circle-2" type="number" disabled="">
             <input class="wrong-attempts" id="circle-1" type="number" disabled="">
-            <input class="userAttempt" type="number">
+            <input class="userAttempt" type="number" autofocus>
         </div>
         
         <button onClick="check()">
@@ -37,12 +36,10 @@ setTimeout(function delay() {
 
 function check() {
     index++;
-    console.log(index);
     var userAttempt = document.querySelector(".userAttempt").value;
+    document.querySelector(".userAttempt").focus();
 
     if (userAttempt == randomNumb) {
-        console.log(`ACERTOU userNumb: ${userAttempt} randomNumb: ${randomNumb}`)
-
         main.id = "green-bg";
         main.innerHTML = `
         <section>
@@ -59,8 +56,6 @@ function check() {
             <p class="white-text">por Luiz</p>
         </footer>`
     } else {
-        console.log(`ERROU userNumb: ${userAttempt} randomNumb: ${randomNumb}`)
-
         switch (index) {
             case 1:
                 check1();
@@ -97,6 +92,14 @@ function check1() {
         <img src="/images/closet-icon.svg" alt="tentativa fechada">
         <img src="/images/closet-icon.svg" alt="tentativa fechada">
         `
+    var title = document.querySelector(".title");
+    var userAttempt = document.querySelector(".userAttempt").value;
+    if (userAttempt > randomNumb) {
+        title.innerHTML = "Um pouco menos"
+    } else {
+        title.innerHTML = "Um pouco mais"
+    }
+    document.querySelector(".userAttempt").value = "";
 }
 
 function check2() {
@@ -117,6 +120,16 @@ function check2() {
         <img src="/images/open-icon.svg" alt="tentativa aberta">
         <img src="/images/closet-icon.svg" alt="tentativa fechada">
         `
+
+    var title = document.querySelector(".title");
+    var userAttempt = document.querySelector(".userAttempt").value;
+    if (userAttempt > randomNumb) {
+        title.innerHTML = "Um pouco menos"
+    } else {
+        title.innerHTML = "Um pouco mais"
+    }
+
+    document.querySelector(".userAttempt").value = "";
 }
 
 function check3() {
@@ -139,6 +152,16 @@ function check3() {
         <img src="/images/wrong-icon.svg" alt="tentativa errada">
         <img src="/images/open-icon.svg" alt="tentativa aberta">
         `
+
+    var title = document.querySelector(".title");
+    var userAttempt = document.querySelector(".userAttempt").value;
+    if (userAttempt > randomNumb) {
+        title.innerHTML = "Um pouco menos"
+    } else {
+        title.innerHTML = "Um pouco mais"
+    }
+
+    document.querySelector(".userAttempt").value = "";
 }
 
 function loss() {
