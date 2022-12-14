@@ -17,13 +17,14 @@ setTimeout(function delay() {
         
         <button onClick="check()">
             <p>enviar</p>
-            <img src="/images/arrow-icon.svg" alt="ícone seta">
+            <img src="images/arrow-icon.svg" alt="ícone seta">
         </button>
 
         <div class="attempts">
-            <img src="/images/open-icon.svg" alt="tentativa aberta">
-            <img src="/images/closet-icon.svg" alt="tentativa fechada">
-            <img src="/images/closet-icon.svg" alt="tentativa fechada"><img src="/images/closet-icon.svg" alt="tentativa fechada">
+            <img src="images/open-icon.svg" alt="tentativa aberta">
+            <img src="images/closet-icon.svg" alt="tentativa fechada">
+            <img src="images/closet-icon.svg" alt="tentativa fechada">
+            <img src="images/closet-icon.svg" alt="tentativa fechada">
         </div>
     </section>
 
@@ -87,10 +88,10 @@ function check1() {
     circle1.style.backgroundColor = "#34A852";
 
     var attempts = document.querySelector(".attempts").innerHTML = `
-        <img src="/images/wrong-icon.svg" alt="tentativa errada">
-        <img src="/images/open-icon.svg" alt="tentativa fechada">
-        <img src="/images/closet-icon.svg" alt="tentativa fechada">
-        <img src="/images/closet-icon.svg" alt="tentativa fechada">
+        <img src="images/wrong-icon.svg" alt="tentativa errada">
+        <img src="images/open-icon.svg" alt="tentativa fechada">
+        <img src="images/closet-icon.svg" alt="tentativa fechada">
+        <img src="images/closet-icon.svg" alt="tentativa fechada">
         `
     var title = document.querySelector(".title");
     var userAttempt = document.querySelector(".userAttempt").value;
@@ -115,10 +116,10 @@ function check2() {
     circle2.style.backgroundColor = "#34A852";
 
     var attempts = document.querySelector(".attempts").innerHTML = `
-        <img src="/images/wrong-icon.svg" alt="tentativa errada">
-        <img src="/images/wrong-icon.svg" alt="tentativa errada">
-        <img src="/images/open-icon.svg" alt="tentativa aberta">
-        <img src="/images/closet-icon.svg" alt="tentativa fechada">
+        <img src="images/wrong-icon.svg" alt="tentativa errada">
+        <img src="images/wrong-icon.svg" alt="tentativa errada">
+        <img src="images/open-icon.svg" alt="tentativa aberta">
+        <img src="images/closet-icon.svg" alt="tentativa fechada">
         `
 
     var title = document.querySelector(".title");
@@ -147,10 +148,10 @@ function check3() {
     circle3.style.backgroundColor = "#34A852";
 
     var attempts = document.querySelector(".attempts").innerHTML = `
-        <img src="/images/wrong-icon.svg" alt="tentativa errada">
-        <img src="/images/wrong-icon.svg" alt="tentativa errada">
-        <img src="/images/wrong-icon.svg" alt="tentativa errada">
-        <img src="/images/open-icon.svg" alt="tentativa aberta">
+        <img src="images/wrong-icon.svg" alt="tentativa errada">
+        <img src="images/wrong-icon.svg" alt="tentativa errada">
+        <img src="images/wrong-icon.svg" alt="tentativa errada">
+        <img src="images/open-icon.svg" alt="tentativa aberta">
         `
 
     var title = document.querySelector(".title");
