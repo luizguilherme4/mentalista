@@ -44,7 +44,7 @@ function check() {
         main.innerHTML = `
         <section>
             <h1 class="white-text">Você acertou!</h1>
-            <h1 class="white-text">${randomNumb}</h1>
+            <h1 class="white-text" id="answer">${randomNumb}</h1>
             <h2 class="white-text">foi o número sorteado</h1>
             <button id="back-button" onClick="window.location.reload()">
                 <p>voltar</p>
@@ -169,7 +169,7 @@ function loss() {
     main.innerHTML = `
         <section>
             <h1 class="white-text">Você errou!</h1>
-            <h1 class="white-text">${randomNumb}</h1>
+            <h1 class="white-text" id="answer">${randomNumb}</h1>
             <h2 class="white-text">foi o número sorteado</h1>
             <button id="back-button" onClick="window.location.reload()">
                 <p>voltar</p>

@@ -48,6 +48,10 @@ h1 {
     color: #F1F1F1;
 }
 
+#answer {
+    font-size: 64px;
+}
+
 .circles {
     display: flex;
     gap: 48px;
@@ -139,6 +143,7 @@ footer {
     margin-bottom: 40px;
 
     display: flex;
+    align-items: center;
     gap: 4px;
 }
 
@@ -228,4 +233,40 @@ button p {
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+
+@media (max-width: 1023px) {
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    .circles {
+        gap: 20px;
+    }
+
+    .small-circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    p,
+    button p {
+        font-size: 16px;
+    }
+
+    input {
+        width: 200px;
+        height: 200px;
+    }
+
+    button {
+        width: 120px;
+    }
 }
